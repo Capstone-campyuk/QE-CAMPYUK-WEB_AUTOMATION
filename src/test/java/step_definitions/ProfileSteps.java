@@ -1,4 +1,4 @@
 package step_definitions;
 
-public class LogInSteps {
+public class ProfileSteps {
 }
