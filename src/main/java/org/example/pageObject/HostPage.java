@@ -1,4 +1,4 @@
 package org.example.pageObject;
 
-public class PaymentPage {
+public class HostPage {
 }

@@ -1,4 +1,4 @@
 package org.example.pageObject;
 
-public class BookingDetailPage {
+public class UserPage {
 }

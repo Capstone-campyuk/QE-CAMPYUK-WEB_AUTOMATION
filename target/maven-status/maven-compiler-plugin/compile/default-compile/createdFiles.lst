@@ -1,0 +1,16 @@
+org\example\pageObject\BookingHistoryPage.class
+org\example\pageObject\EditItemPage.class
+org\example\pageObject\OrderPage.class
+org\example\pageObject\ItemListPage.class
+org\example\pageObject\LandingPage.class
+org\example\pageObject\DetailItemHostPage.class
+org\example\pageObject\PaymentPage.class
+org\example\pageObject\DashboardSAdminPage.class
+org\example\pageObject\DetailRequestPage.class
+org\example\pageObject\BookingDetailPage.class
+org\example\pageObject\RegisterPage.class
+org\example\pageObject\DashboardHostPage.class
+org\example\pageObject\ProfilePage.class
+org\example\pageObject\AddItemPage.class
+org\example\pageObject\DetailItemPage.class
+org\example\pageObject\LogInPage.class

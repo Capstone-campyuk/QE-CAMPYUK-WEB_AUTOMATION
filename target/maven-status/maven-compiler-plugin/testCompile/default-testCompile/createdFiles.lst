@@ -1,0 +1,16 @@
+step_definitions\Hooks.class
+step_definitions\AddItemSteps.class
+step_definitions\RunCukesTest.class
+step_definitions\AddCampSteps.class
+step_definitions\LogInUserSteps.class
+step_definitions\LoginAdminSteps.class
+step_definitions\RegisterUserSteps.class
+step_definitions\LoginHostSteps.class
+step_definitions\AcceptRequestSteps.class
+step_definitions\RegisterHostSteps.class
+step_definitions\EditCampSteps.class
+step_definitions\LandingPageSteps.class
+step_definitions\BookItemSteps.class
+step_definitions\ProfileSteps.class
+step_definitions\PaymentSteps.class
+step_definitions\EditItemSteps.class
