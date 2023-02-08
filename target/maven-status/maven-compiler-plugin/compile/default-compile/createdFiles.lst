@@ -1,0 +1,6 @@
+org/example/pageObject/UserPage.class
+org/example/pageObject/LandingPage.class
+org/example/pageObject/LogInPage.class
+org/example/pageObject/AdminPage.class
+org/example/pageObject/HostPage.class
+org/example/pageObject/RegisterPage.class

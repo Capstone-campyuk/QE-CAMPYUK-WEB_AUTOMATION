@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 9723512800,
+              "duration": 9434614388,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Host login with valid \"username\" and \"password\"",
+        "line": 5,
+        "name": "Host input valid data to Registration",
         "description": "",
-        "id": "as-host-i-want-to-log-in;host-login-with-valid-\"username\"-and-\"password\"",
+        "id": "register-host;host-input-valid-data-to-registration",
         "after": [
           {
             "result": {
-              "duration": 735018900,
+              "duration": 237186322,
               "status": "passed"
             },
             "match": {
@@ -34,256 +34,132 @@
         "steps": [
           {
             "result": {
-              "duration": 352575300,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Host open the campyuk website",
-            "match": {
-              "location": "LoginHostSteps.verifyDisplay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6362464300,
+              "duration": 466347080,
               "status": "passed"
             },
             "line": 6,
-            "name": "Host input \"punyagua\" as userName and input \"12345678\" as password",
+            "name": "host already at campyuk website",
             "match": {
-              "arguments": [
-                {
-                  "val": "punyagua",
-                  "offset": 12
-                },
-                {
-                  "val": "12345678",
-                  "offset": 45
-                }
-              ],
-              "location": "LoginHostSteps.inputCredential(String,String)"
+              "location": "RegisterHostSteps.verifyLandingPage()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 118407300,
+              "duration": 250173530,
               "status": "passed"
             },
             "line": 7,
-            "name": "Host should directed into next page",
+            "name": "host click login button on landing page",
             "match": {
-              "location": "LoginHostSteps.verifyDisplayHost()"
+              "location": "RegisterHostSteps.verifyBtnLoginOnLandingPage()"
             },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 12170658400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Invalid Login Host",
-        "description": "",
-        "id": "as-host-i-want-to-log-in;invalid-login-host;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 818228400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 250269400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Host open the campyuk website",
-            "match": {
-              "location": "LoginHostSteps.verifyDisplay()"
-            },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 6453340900,
-              "status": "passed"
+              "duration": 1242066315,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cbutton id\u003d\"btn-login\" class\u003d\"btn bg-btn text-white hover:bg-btnh border-none rounded-full w-full disabled:bg-btnh disabled:text-gray-200 my-3 mt-10 btn-disabled\" disabled\u003d\"\"\u003e...\u003c/button\u003e is not clickable at point (1068, 430). Other element would receive the click: \u003cform\u003e...\u003c/form\u003e\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00274.1.2\u0027, revision: \u00279a5a329c5a\u0027\nSystem info: host: \u0027Research-Synergy-Foundation.local\u0027, ip: \u0027fe80:0:0:0:1ccc:7650:f391:bd22%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [00b6f1fa256fd46fb1a23b862ac92dcc, clickElement {id\u003d308fc64a-d6c8-4a80-829d-cf2d0befc428}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/7v/sz1yyxp54bq...}, goog:chromeOptions: {debuggerAddress: localhost:64997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64997/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on MAC (00b6f1fa256fd46fb1a23b862ac92dcc)] -\u003e id: btn-login]\nSession ID: 00b6f1fa256fd46fb1a23b862ac92dcc\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\n\tat org.example.pageObject.RegisterPage.clickRegister(RegisterPage.java:56)\n\tat step_definitions.RegisterHostSteps.verifyBtnRegisterOnLoginPage(RegisterHostSteps.java:34)\n\tat ✽.And host click register button on Login page(features/RegisterHost.feature:8)\n",
+              "status": "failed"
             },
-            "line": 12,
-            "name": "Host input \"punyagua\" as userName and input \"apelu\" as password",
+            "line": 8,
+            "name": "host click register button on Login page",
             "match": {
-              "arguments": [
-                {
-                  "val": "punyagua",
-                  "offset": 12
-                },
-                {
-                  "val": "apelu",
-                  "offset": 45
-                }
-              ],
-              "location": "LoginHostSteps.inputCredential(String,String)"
+              "location": "RegisterHostSteps.verifyBtnRegisterOnLoginPage()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "host directed into Register page",
+            "match": {
+              "location": "RegisterHostSteps.verifyRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I choose register as Host",
+            "match": {
+              "location": "RegisterHostSteps.selectRoleRegister()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5146959600,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Host see error \"password not matched\" on login page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "password not matched",
-                  "offset": 16
-                }
-              ],
-              "location": "LoginHostSteps.errorText(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@LoginHost"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 5354865200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Invalid Login Host",
-        "description": "",
-        "id": "as-host-i-want-to-log-in;invalid-login-host;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 760824700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 204888600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
-            "name": "Host open the campyuk website",
-            "match": {
-              "location": "LoginHostSteps.verifyDisplay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6329464800,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Host input \"apesiii\" as userName and input \"mencoba12\" as password",
+            "name": "I enter \"Diahr\" as Username, \"Diahr\" as Full Name, \"diiahr82@gmail.com\" as Email, and \"12345\" as Password",
             "match": {
               "arguments": [
                 {
-                  "val": "apesiii",
-                  "offset": 12
+                  "val": "Diahr",
+                  "offset": 9
                 },
                 {
-                  "val": "mencoba12",
-                  "offset": 44
+                  "val": "Diahr",
+                  "offset": 30
+                },
+                {
+                  "val": "diiahr82@gmail.com",
+                  "offset": 52
+                },
+                {
+                  "val": "12345",
+                  "offset": 87
                 }
               ],
-              "location": "LoginHostSteps.inputCredential(String,String)"
+              "location": "RegisterHostSteps.inputCredential(String,String,String,String)"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 5197315600,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 13,
-            "name": "Host see error \"account not registered or server error\" on login page",
+            "line": 12,
+            "name": "I should see an pop up message \"success create accpunt\"",
             "match": {
               "arguments": [
                 {
-                  "val": "account not registered or server error",
-                  "offset": 16
+                  "val": "success create accpunt",
+                  "offset": 32
                 }
               ],
-              "location": "LoginHostSteps.errorText(String)"
+              "location": "RegisterHostSteps.verifyPopUpMessage(String)"
             },
-            "matchedColumns": [
-              2
-            ],
             "keyword": "Then "
-          }
-        ],
-        "tags": [
+          },
           {
-            "line": 1,
-            "name": "@LoginHost"
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "click OK button on pop up",
+            "match": {
+              "location": "RegisterHostSteps.verifyBtnPopUp()"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "as host i want to log in",
-    "description": "",
-    "id": "as-host-i-want-to-log-in",
+    "name": "Register Host",
+    "description": "Host make registration on Campyuk Website",
+    "id": "register-host",
     "keyword": "Feature",
-    "uri": "features/LoginHost.feature",
+    "uri": "features/RegisterHost.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@LoginHost"
+        "name": "@Step"
       }
     ]
   }

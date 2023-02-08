@@ -1,17 +1,8 @@
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\LoginHostSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\RegisterUserSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\EditItemSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\EditCampSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\LoginAdminSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\AddCampSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\AddItemSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\Hooks.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\LandingPageSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\BookItemSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\LogInUserSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\PaymentSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\BookCampSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\ProfileSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\RegisterHostSteps.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\RunCukesTest.java
-D:\alterra academy\automation\QE-CAMPYUK-WEB_AUTOMATION\src\test\java\step_definitions\AcceptRequestSteps.java
+/Users/researchsynergyfoundation/Downloads/alta/QE-CAMPYUK-WEB_AUTOMATION/src/test/java/step_definitions/Hooks.java
+/Users/researchsynergyfoundation/Downloads/alta/QE-CAMPYUK-WEB_AUTOMATION/src/test/java/step_definitions/RegisterUserSteps.java
+/Users/researchsynergyfoundation/Downloads/alta/QE-CAMPYUK-WEB_AUTOMATION/src/test/java/step_definitions/LogInUserSteps.java
+/Users/researchsynergyfoundation/Downloads/alta/QE-CAMPYUK-WEB_AUTOMATION/src/test/java/step_definitions/RegisterHostSteps.java
+/Users/researchsynergyfoundation/Downloads/alta/QE-CAMPYUK-WEB_AUTOMATION/src/test/java/step_definitions/RunCukesTest.java
+/Users/researchsynergyfoundation/Downloads/alta/QE-CAMPYUK-WEB_AUTOMATION/src/test/java/step_definitions/LoginHostSteps.java
+/Users/researchsynergyfoundation/Downloads/alta/QE-CAMPYUK-WEB_AUTOMATION/src/test/java/step_definitions/LoginAdminSteps.java
+/Users/researchsynergyfoundation/Downloads/alta/QE-CAMPYUK-WEB_AUTOMATION/src/test/java/step_definitions/LandingPageSteps.java
