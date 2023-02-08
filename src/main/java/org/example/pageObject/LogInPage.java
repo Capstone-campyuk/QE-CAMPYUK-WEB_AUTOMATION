@@ -95,4 +95,5 @@ public class LogInPage {
         clickOkAdmin.click();
     }
 
+
 }

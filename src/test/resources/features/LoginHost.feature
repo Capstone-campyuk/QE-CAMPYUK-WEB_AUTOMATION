@@ -10,8 +10,17 @@ Feature: as host i want to log in
   Scenario Outline: Invalid Login Host
     Given Host open the campyuk website
     When Host input "<userName>" as userName and input "<password>" as password
-    And Host see error "<errorMessage>" on login page
+    Then Host see error "<errorMessage>" on login page
     Examples:
       | userName | password  | errorMessage                           |
       | punyagua | apelu     | password not matched                   |
       | apesiii  | mencoba12 | account not registered or server error |
+
+#  Scenario Outline: guest login with field username blank data
+#    Given Host open the campyuk website
+#    When Host input "<userName>" as userName and input "<password>" as password
+#  And
+#    Examples:
+#      | userName | password |  |
+#      |          | apelu    |  |
+#      | apesiii  |          |  |

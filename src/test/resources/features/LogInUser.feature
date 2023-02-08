@@ -17,3 +17,12 @@ Feature: as user i want login into campyuk website
         | userName | password  | errorMessage                           |
         | makmur21 | apelu     | password not matched                   |
         | apesiii  | mencoba12 | account not registered or server error |
+
+#  Scenario Outline: guest login with field username blank data
+#    Given User open the campyuk website
+#    When User input "<userName>" as userName and input "<password>" as password
+#    And User should not click button login
+#    Examples:
+#      | userName | password |
+#      |          | apelu    |
+#      | apesiii  |          |

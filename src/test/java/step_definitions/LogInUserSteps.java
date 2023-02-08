@@ -11,13 +11,13 @@ import org.openqa.selenium.WebDriver;
 public class LogInUserSteps {
     private WebDriver webDriver;
 
-    public LogInUserSteps(){
+    public LogInUserSteps() {
         super();
-        this.webDriver =Hooks.webDriver;
+        this.webDriver = Hooks.webDriver;
     }
 
     @Given("User open the campyuk website")
-    public void verifyDisplay(){
+    public void verifyDisplay() {
         LogInPage loginPage = new LogInPage(webDriver);
         loginPage.getHeader();
         loginPage.clickLoginLandingPage();
@@ -37,17 +37,19 @@ public class LogInUserSteps {
         Thread.sleep(6000);
 
     }
+
     @Then("User should directed into next page")
-    public void verifyDisplay1(){
+    public void verifyDisplay1() {
         LogInPage loginPage = new LogInPage(webDriver);
         loginPage.getHeader2();
         loginPage.clickOk();
     }
+
     @Then("User see error \"(.*)\" on login page")
     public void errorText(String errorText) throws InterruptedException {
         LogInPage loginpage = new LogInPage(webDriver);
         Assert.assertEquals(errorText, loginpage.getErrorText());
-        Thread.sleep(3000);
+        Thread.sleep(6000);
         loginpage.clickOkErrorMessage();
 
     }

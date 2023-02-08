@@ -1,5 +1,6 @@
 package step_definitions;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -41,10 +42,11 @@ public class LoginHostSteps {
     public void errorText(String errorText) throws InterruptedException {
         LogInPage loginpage = new LogInPage(webDriver);
         Assert.assertEquals(errorText, loginpage.getErrorText());
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         loginpage.clickOkErrorMessage();
 
     }
+
 
 
 }
