@@ -6,85 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 9723512800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Host login with valid \"username\" and \"password\"",
-        "description": "",
-        "id": "as-host-i-want-to-log-in;host-login-with-valid-\"username\"-and-\"password\"",
-        "after": [
-          {
-            "result": {
-              "duration": 735018900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 352575300,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Host open the campyuk website",
-            "match": {
-              "location": "LoginHostSteps.verifyDisplay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6362464300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Host input \"punyagua\" as userName and input \"12345678\" as password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "punyagua",
-                  "offset": 12
-                },
-                {
-                  "val": "12345678",
-                  "offset": 45
-                }
-              ],
-              "location": "LoginHostSteps.inputCredential(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 118407300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Host should directed into next page",
-            "match": {
-              "location": "LoginHostSteps.verifyDisplayHost()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 12170658400,
+              "duration": 11533172799,
               "status": "passed"
             },
             "match": {
@@ -93,13 +15,13 @@
           }
         ],
         "line": 16,
-        "name": "Invalid Login Host",
+        "name": "update profile",
         "description": "",
-        "id": "as-host-i-want-to-log-in;invalid-login-host;;2",
+        "id": "testing-update-feature;update-profile;;2",
         "after": [
           {
             "result": {
-              "duration": 818228400,
+              "duration": 1565808500,
               "status": "passed"
             },
             "match": {
@@ -112,178 +34,151 @@
         "steps": [
           {
             "result": {
-              "duration": 250269400,
+              "duration": 512853599,
               "status": "passed"
             },
-            "line": 11,
-            "name": "Host open the campyuk website",
+            "line": 5,
+            "name": "User open the campyuk website",
             "match": {
-              "location": "LoginHostSteps.verifyDisplay()"
+              "location": "LogInUserSteps.verifyDisplay()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6453340900,
+              "duration": 6331327300,
               "status": "passed"
             },
-            "line": 12,
-            "name": "Host input \"punyagua\" as userName and input \"apelu\" as password",
+            "line": 6,
+            "name": "User input \"diqy07\" as userName and input \"12345678\" as password",
             "match": {
               "arguments": [
                 {
-                  "val": "punyagua",
+                  "val": "diqy07",
                   "offset": 12
                 },
                 {
-                  "val": "apelu",
-                  "offset": 45
+                  "val": "12345678",
+                  "offset": 43
                 }
               ],
-              "location": "LoginHostSteps.inputCredential(String,String)"
+              "location": "LogInUserSteps.inputCredential(String,String)"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5146959600,
+              "duration": 46320401,
               "status": "passed"
             },
-            "line": 13,
-            "name": "Host see error \"password not matched\" on login page",
+            "line": 7,
+            "name": "User should directed into next page",
             "match": {
-              "arguments": [
-                {
-                  "val": "password not matched",
-                  "offset": 16
-                }
-              ],
-              "location": "LoginHostSteps.errorText(String)"
+              "location": "LogInUserSteps.verifyDisplay1()"
             },
-            "matchedColumns": [
-              2
-            ],
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@LoginHost"
-          }
-        ]
-      },
-      {
-        "before": [
+          },
           {
             "result": {
-              "duration": 5354865200,
+              "duration": 226200700,
               "status": "passed"
             },
+            "line": 8,
+            "name": "User click explore button",
             "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Invalid Login Host",
-        "description": "",
-        "id": "as-host-i-want-to-log-in;invalid-login-host;;3",
-        "after": [
+              "location": "CampSiteUserSteps.ExploreButton()"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 760824700,
+              "duration": 5178393000,
               "status": "passed"
             },
+            "line": 9,
+            "name": "User Should see the items list",
             "match": {
-              "location": "Hooks.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+              "location": "CampSiteUserSteps.verifyCampsitePage()"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 204888600,
-              "status": "passed"
+              "duration": 64980200,
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d109.0.5414.120)\nBuild info: version: \u00274.1.2\u0027, revision: \u00279a5a329c5a\u0027\nSystem info: host: \u0027DESKTOP-NR0C4NT\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_351\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [45f6ddfe67c544ca6e19fe2eff66cef8, clickElement {id\u003d554472f9-a646-4da5-a0d2-08e2e3d0dd6a}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\istanbul\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51343/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (45f6ddfe67c544ca6e19fe2eff66cef8)] -\u003e id: btn-profilelg]\nSession ID: 45f6ddfe67c544ca6e19fe2eff66cef8\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat org.example.pageObject.UserPage.clickProfile(UserPage.java:38)\r\n\tat step_definitions.ProfileUserSteps.ProfileButton(ProfileUserSteps.java:20)\r\n\tat ✽.And User click profile button(features/ProfileUser.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User click profile button",
+            "match": {
+              "location": "ProfileUserSteps.ProfileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "line": 11,
-            "name": "Host open the campyuk website",
+            "name": "User click update button",
             "match": {
-              "location": "LoginHostSteps.verifyDisplay()"
+              "location": "ProfileUserSteps.UpdateButton()"
             },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 6329464800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
-            "name": "Host input \"apesiii\" as userName and input \"mencoba12\" as password",
+            "name": "User input\"masihdiqy\"as fullName and input\"diqy08\" as userName and input\"apaadanya@gmail.com\"as email and input\"switch.PNG\"as image",
             "match": {
               "arguments": [
                 {
-                  "val": "apesiii",
-                  "offset": 12
+                  "val": "masihdiqy",
+                  "offset": 11
                 },
                 {
-                  "val": "mencoba12",
-                  "offset": 44
+                  "val": "diqy08",
+                  "offset": 43
+                },
+                {
+                  "val": "apaadanya@gmail.com",
+                  "offset": 73
+                },
+                {
+                  "val": "switch.PNG",
+                  "offset": 112
                 }
               ],
-              "location": "LoginHostSteps.inputCredential(String,String)"
+              "location": "ProfileUserSteps.inputUpdate(String,String,String,String)"
             },
             "matchedColumns": [
               0,
-              1
+              1,
+              2,
+              3
             ],
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5197315600,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Host see error \"account not registered or server error\" on login page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "account not registered or server error",
-                  "offset": 16
-                }
-              ],
-              "location": "LoginHostSteps.errorText(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 1,
-            "name": "@LoginHost"
+            "name": "@Profile"
           }
         ]
       }
     ],
-    "name": "as host i want to log in",
+    "name": "Testing Update feature",
     "description": "",
-    "id": "as-host-i-want-to-log-in",
+    "id": "testing-update-feature",
     "keyword": "Feature",
-    "uri": "features/LoginHost.feature",
+    "uri": "features/ProfileUser.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@LoginHost"
+        "name": "@Profile"
       }
     ]
   }

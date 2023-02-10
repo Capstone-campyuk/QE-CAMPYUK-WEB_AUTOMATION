@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="step_definitions.RunCukesTest" time="2.327" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="step_definitions.RunCukesTest" time="0.066" errors="2" skipped="2">
   <properties>
     <property name="idea.version" value="2022.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -65,16 +65,99 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" name="Given Host open the campyuk website" time="0.008"/>
-  <testcase classname="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" name="When Host input &quot;punyagua&quot; as userName and input &quot;12345678&quot; as password" time="0"/>
-  <testcase classname="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" name="Then Host should directed into next page" time="0"/>
-  <testcase classname="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" name="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" time="0.738"/>
-  <testcase classname="| punyagua | apelu | password not matched |" name="Given Host open the campyuk website" time="0"/>
-  <testcase classname="| punyagua | apelu | password not matched |" name="When Host input &quot;punyagua&quot; as userName and input &quot;apelu&quot; as password" time="0"/>
-  <testcase classname="| punyagua | apelu | password not matched |" name="Then Host see error &quot;password not matched&quot; on login page" time="0"/>
-  <testcase classname="| punyagua | apelu | password not matched |" name="| punyagua | apelu | password not matched |" time="0.819"/>
-  <testcase classname="| apesiii | mencoba12 | account not registered or server error |" name="Given Host open the campyuk website" time="0"/>
-  <testcase classname="| apesiii | mencoba12 | account not registered or server error |" name="When Host input &quot;apesiii&quot; as userName and input &quot;mencoba12&quot; as password" time="0"/>
-  <testcase classname="| apesiii | mencoba12 | account not registered or server error |" name="Then Host see error &quot;account not registered or server error&quot; on login page" time="0"/>
-  <testcase classname="| apesiii | mencoba12 | account not registered or server error |" name="| apesiii | mencoba12 | account not registered or server error |" time="0.762"/>
+  <testcase classname="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" name="Given User open the campyuk website" time="0.005"/>
+  <testcase classname="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" name="When User input &quot;diqy07&quot; as userName and input &quot;12345678&quot; as password" time="0"/>
+  <testcase classname="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" name="Then User should directed into next page" time="0"/>
+  <testcase classname="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" name="And User click explore button" time="0"/>
+  <testcase classname="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" name="And User Should see the items list" time="0.001"/>
+  <testcase classname="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" name="And User click profile button" time="0.014">
+    <error message="element not interactable
+  (Session info: chrome=109.0.5414.120)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-NR0C4NT&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45f6ddfe67c544ca6e19fe2eff66cef8, clickElement {id=554472f9-a646-4da5-a0d2-08e2e3d0dd6a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\istanbul\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51343/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (45f6ddfe67c544ca6e19fe2eff66cef8)] -&gt; id: btn-profilelg]
+Session ID: 45f6ddfe67c544ca6e19fe2eff66cef8" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.120)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-NR0C4NT&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45f6ddfe67c544ca6e19fe2eff66cef8, clickElement {id=554472f9-a646-4da5-a0d2-08e2e3d0dd6a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\istanbul\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51343/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (45f6ddfe67c544ca6e19fe2eff66cef8)] -&gt; id: btn-profilelg]
+Session ID: 45f6ddfe67c544ca6e19fe2eff66cef8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at org.example.pageObject.UserPage.clickProfile(UserPage.java:38)
+	at step_definitions.ProfileUserSteps.ProfileButton(ProfileUserSteps.java:20)
+	at ✽.And User click profile button(features/ProfileUser.feature:10)
+</error>
+  </testcase>
+  <testcase classname="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" name="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" time="0.015">
+    <error message="element not interactable
+  (Session info: chrome=109.0.5414.120)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-NR0C4NT&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45f6ddfe67c544ca6e19fe2eff66cef8, clickElement {id=554472f9-a646-4da5-a0d2-08e2e3d0dd6a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\istanbul\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51343/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (45f6ddfe67c544ca6e19fe2eff66cef8)] -&gt; id: btn-profilelg]
+Session ID: 45f6ddfe67c544ca6e19fe2eff66cef8" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.120)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-NR0C4NT&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45f6ddfe67c544ca6e19fe2eff66cef8, clickElement {id=554472f9-a646-4da5-a0d2-08e2e3d0dd6a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\istanbul\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51343/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (45f6ddfe67c544ca6e19fe2eff66cef8)] -&gt; id: btn-profilelg]
+Session ID: 45f6ddfe67c544ca6e19fe2eff66cef8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at org.example.pageObject.UserPage.clickProfile(UserPage.java:38)
+	at step_definitions.ProfileUserSteps.ProfileButton(ProfileUserSteps.java:20)
+	at ✽.And User click profile button(features/ProfileUser.feature:10)
+</error>
+  </testcase>
+  <testcase classname="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" name="And User click update button" time="0.015">
+    <skipped/>
+  </testcase>
+  <testcase classname="| masihdiqy | diqy08 | apaadanya@gmail.com | switch.PNG |" name="When User input&quot;masihdiqy&quot;as fullName and input&quot;diqy08&quot; as userName and input&quot;apaadanya@gmail.com&quot;as email and input&quot;switch.PNG&quot;as image" time="0.016">
+    <skipped/>
+  </testcase>
 </testsuite>

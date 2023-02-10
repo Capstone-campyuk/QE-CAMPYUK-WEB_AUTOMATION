@@ -43,7 +43,7 @@ public class LogInPage {
         loginButton.click();
     }
 
-    @FindBy(xpath = "//div[@class='swal2-popup swal2-modal swal2-show']")
+    @FindBy(id = "btn-home")
     private WebElement header2;
     public boolean getHeader2(){
         return header2.isDisplayed();
