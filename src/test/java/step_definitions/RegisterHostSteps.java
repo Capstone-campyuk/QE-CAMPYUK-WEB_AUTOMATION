@@ -16,33 +16,33 @@ public class RegisterHostSteps {
         this.webDriver = Hooks.webDriver;
     }
     @Given("host already at campyuk website")
-    public void verifyLandingPage() {
+    public void verifyHostOnLandingPage() {
         RegisterPage registerPage = new RegisterPage(webDriver);
         registerPage.landingPageIsDisplayed();
 
     }
 
     @And("host click login button on landing page")
-    public void verifyBtnLoginOnLandingPage() {
+    public void hostClickBtnLoginOnLandingPage() {
         RegisterPage registerPage = new RegisterPage(webDriver);
         registerPage.clickLogin();
     }
 
     @And("host click register button on Login page")
-    public void verifyBtnRegisterOnLoginPage() {
+    public void hostClickBtnRegisterOnLoginPage() {
         RegisterPage registerPage = new RegisterPage(webDriver);
         registerPage.clickRegister();
     }
 
-    @And("host directed into Register page")
-    public void verifyRegisterPage() throws InterruptedException {
+    @And("directed into Register page")
+    public void verifyHostOnRegisterPage() throws InterruptedException {
         RegisterPage registerPage = new RegisterPage(webDriver);
         Assert.assertTrue(registerPage.registerPageIsDisplayed());
         Thread.sleep(2000);
     }
 
     @When("I choose register as Host")
-    public void selectRoleRegister() throws InterruptedException {
+    public void selectRoleRegisterHost() throws InterruptedException {
         RegisterPage registerPage = new RegisterPage(webDriver);
         String a = "Host";
         registerPage.selectBtnRoleRegister(a);
@@ -50,7 +50,7 @@ public class RegisterHostSteps {
     }
 
     @And("I enter \"(.*)\" as Username, \"(.*)\" as Full Name, \"(.*)\" as Email, and \"(.*)\" as Password")
-    public void inputCredential(String username, String fullname, String email, String password) throws InterruptedException {
+    public void inputCredentialHost(String username, String fullname, String email, String password) throws InterruptedException {
         RegisterPage registerPage = new RegisterPage(webDriver);
         registerPage.setUserName(username);
         registerPage.setFullName(fullname);

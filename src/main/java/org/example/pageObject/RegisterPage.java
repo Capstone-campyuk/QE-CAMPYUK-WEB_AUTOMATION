@@ -39,9 +39,9 @@ public class RegisterPage {
     @FindBy(id = "input-password")
     private WebElement password;
 
-    @FindBy(id = "swal2-html-container")
+    @FindBy(css = ".swal2-html-container")
     private WebElement popUpMessage;
-    @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled']")
+    @FindBy(css = ".swal2-confirm")
     private WebElement btnPopUp;
 
     public boolean landingPageIsDisplayed(){
@@ -57,8 +57,7 @@ public class RegisterPage {
     }
 
     public boolean registerPageIsDisplayed(){
-        pageRegister.isDisplayed();
-        return true;
+        return pageRegister.isDisplayed();
     }
 
     public void selectBtnRoleRegister(String typeRoleRegister) throws InterruptedException {
