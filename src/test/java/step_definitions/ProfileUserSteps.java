@@ -1,6 +1,7 @@
 package step_definitions;
 
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.example.pageObject.LogInPage;
 import org.example.pageObject.UserPage;
@@ -21,9 +22,10 @@ public class ProfileUserSteps {
         userPage.getProfile();
     }
     @And("User click update button")
-    public void UpdateButton(){
+    public void UpdateButton()throws InterruptedException {
         UserPage userPage = new UserPage(webDriver);
         userPage.clickUpdate();
+        Thread.sleep(3000);
 
     }
 
@@ -37,6 +39,29 @@ public class ProfileUserSteps {
         userPage.buttonSave();
         Thread.sleep(6000);
 
+    }
+    @And("User remove profile")
+    public void RemoveProfile()throws InterruptedException {
+        UserPage userPage = new UserPage(webDriver);
+        userPage.removeButton();
+        userPage.getPopUpConfirmationRemove();
+        userPage.removeButtonConfirmationYes();
+        Thread.sleep(3000);
+}
+
+    @And("User cancel remove profile")
+    public void CancelRemoveProfile()throws InterruptedException {
+        UserPage userPage = new UserPage(webDriver);
+        userPage.removeButton();
+        userPage.getPopUpConfirmationRemove();
+        userPage.removeButtonConfirmationNo();
+        Thread.sleep(3000);
+    }
+    @Then("User should directed into login page")
+    public void LoginAfterRemoveProfile()throws InterruptedException {
+        UserPage userPage = new UserPage(webDriver);
+        userPage.getLoginPageHeaderBack();
+        Thread.sleep(3000);
     }
 
 }

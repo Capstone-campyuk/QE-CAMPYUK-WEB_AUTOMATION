@@ -23,6 +23,22 @@ public class CampSiteUserSteps {
         UserPage userPage = new UserPage(webDriver);
         Assert.assertTrue(userPage.getCampsite());
 //        Assert.assertTrue(userPage.getDisplayCamp1());
+        Thread.sleep(8000);
+    }
+    @And("User choose babi panggang karo camp site")
+    public void CheckButton()throws InterruptedException{
+        UserPage userPage = new UserPage(webDriver);
+        userPage.getCampsiteDetail();
+        userPage.clickCheck();
+//        userPage.getCampsiteDetail();
+//        userPage.getCampsiteDetail2();
+        Thread.sleep(5000);
+    }
+    @And("User reserve a campsite")
+    public void CheckReserve()throws InterruptedException{
+        UserPage userPage = new UserPage(webDriver);
+        userPage.clickReserve();
+        userPage.getOrderHeader();
         Thread.sleep(5000);
     }
 
