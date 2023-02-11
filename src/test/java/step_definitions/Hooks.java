@@ -11,8 +11,8 @@ public class Hooks {
 
     @Before
     public void openBrowser(){
-//        System.setProperty("webdriver.chrome.driver",
-//                System.getProperty("user.dir") + "\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",
+                System.getProperty("user.dir") + "\\driver\\chromedriver.exe");
 
         System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, "driver/chromedriver");
 
