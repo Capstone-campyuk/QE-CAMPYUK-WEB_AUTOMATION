@@ -114,11 +114,11 @@
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-plugin-plugin</artifactId>-->
-            <!--                <version>3.6.0</version>-->
-            <!--            </plugin>-->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-plugin-plugin</artifactId>
+                            <version>3.6.0</version>
+                        </plugin>
 
             <!-- optional, only if you want pretty reports -->
             <plugin>

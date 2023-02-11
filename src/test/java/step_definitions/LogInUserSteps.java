@@ -42,7 +42,7 @@ public class LogInUserSteps {
     public void verifyDisplay1() {
         LogInPage loginPage = new LogInPage(webDriver);
         loginPage.getHeader2();
-        loginPage.clickOk();
+
     }
 
     @Then("User see error \"(.*)\" on login page")

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="step_definitions.RunCukesTest" time="2.327" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="step_definitions.RunCukesTest" time="10.014" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -65,16 +65,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" name="Given Host open the campyuk website" time="0.008"/>
-  <testcase classname="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" name="When Host input &quot;punyagua&quot; as userName and input &quot;12345678&quot; as password" time="0"/>
-  <testcase classname="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" name="Then Host should directed into next page" time="0"/>
-  <testcase classname="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" name="Scenario: Host login with valid &quot;username&quot; and &quot;password&quot;" time="0.738"/>
-  <testcase classname="| punyagua | apelu | password not matched |" name="Given Host open the campyuk website" time="0"/>
-  <testcase classname="| punyagua | apelu | password not matched |" name="When Host input &quot;punyagua&quot; as userName and input &quot;apelu&quot; as password" time="0"/>
-  <testcase classname="| punyagua | apelu | password not matched |" name="Then Host see error &quot;password not matched&quot; on login page" time="0"/>
-  <testcase classname="| punyagua | apelu | password not matched |" name="| punyagua | apelu | password not matched |" time="0.819"/>
-  <testcase classname="| apesiii | mencoba12 | account not registered or server error |" name="Given Host open the campyuk website" time="0"/>
-  <testcase classname="| apesiii | mencoba12 | account not registered or server error |" name="When Host input &quot;apesiii&quot; as userName and input &quot;mencoba12&quot; as password" time="0"/>
-  <testcase classname="| apesiii | mencoba12 | account not registered or server error |" name="Then Host see error &quot;account not registered or server error&quot; on login page" time="0"/>
-  <testcase classname="| apesiii | mencoba12 | account not registered or server error |" name="| apesiii | mencoba12 | account not registered or server error |" time="0.762"/>
+  <testcase classname="Scenario: Validate display campsite and all" name="Given User open the campyuk website" time="0.014"/>
+  <testcase classname="Scenario: Validate display campsite and all" name="When User input &quot;diqy07&quot; as userName and input &quot;12345678&quot; as password" time="0"/>
+  <testcase classname="Scenario: Validate display campsite and all" name="Then User should directed into next page" time="0"/>
+  <testcase classname="Scenario: Validate display campsite and all" name="And User click explore button" time="0"/>
+  <testcase classname="Scenario: Validate display campsite and all" name="And User Should see the items list" time="0"/>
+  <testcase classname="Scenario: Validate display campsite and all" name="And User choose babi panggang karo camp site" time="0.001"/>
+  <testcase classname="Scenario: Validate display campsite and all" name="And User reserve a campsite" time="0"/>
+  <testcase classname="Scenario: Validate display campsite and all" name="Scenario: Validate display campsite and all" time="9.999"/>
 </testsuite>

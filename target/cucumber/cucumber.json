@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 9723512800,
+              "duration": 11051984700,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 4,
-        "name": "Host login with valid \"username\" and \"password\"",
+        "name": "Validate display campsite and all",
         "description": "",
-        "id": "as-host-i-want-to-log-in;host-login-with-valid-\"username\"-and-\"password\"",
+        "id": "testing-item-list-as-user;validate-display-campsite-and-all",
         "after": [
           {
             "result": {
-              "duration": 735018900,
+              "duration": 9996737800,
               "status": "passed"
             },
             "match": {
@@ -34,256 +34,110 @@
         "steps": [
           {
             "result": {
-              "duration": 352575300,
+              "duration": 467522700,
               "status": "passed"
             },
             "line": 5,
-            "name": "Host open the campyuk website",
+            "name": "User open the campyuk website",
             "match": {
-              "location": "LoginHostSteps.verifyDisplay()"
+              "location": "LogInUserSteps.verifyDisplay()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6362464300,
+              "duration": 6335446700,
               "status": "passed"
             },
             "line": 6,
-            "name": "Host input \"punyagua\" as userName and input \"12345678\" as password",
+            "name": "User input \"diqy07\" as userName and input \"12345678\" as password",
             "match": {
               "arguments": [
                 {
-                  "val": "punyagua",
+                  "val": "diqy07",
                   "offset": 12
                 },
                 {
                   "val": "12345678",
-                  "offset": 45
+                  "offset": 43
                 }
               ],
-              "location": "LoginHostSteps.inputCredential(String,String)"
+              "location": "LogInUserSteps.inputCredential(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 118407300,
+              "duration": 15660878200,
               "status": "passed"
             },
             "line": 7,
-            "name": "Host should directed into next page",
+            "name": "User should directed into next page",
             "match": {
-              "location": "LoginHostSteps.verifyDisplayHost()"
+              "location": "LogInUserSteps.verifyDisplay1()"
             },
             "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
+          },
           {
             "result": {
-              "duration": 12170658400,
+              "duration": 149690700,
               "status": "passed"
             },
+            "line": 8,
+            "name": "User click explore button",
             "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Invalid Login Host",
-        "description": "",
-        "id": "as-host-i-want-to-log-in;invalid-login-host;;2",
-        "after": [
+              "location": "CampSiteUserSteps.ExploreButton()"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 818228400,
+              "duration": 8263904700,
               "status": "passed"
             },
+            "line": 9,
+            "name": "User Should see the items list",
             "match": {
-              "location": "Hooks.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+              "location": "CampSiteUserSteps.verifyCampsitePage()"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 250269400,
+              "duration": 5211573500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User choose babi panggang karo camp site",
+            "match": {
+              "location": "CampSiteUserSteps.CheckButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5275437100,
               "status": "passed"
             },
             "line": 11,
-            "name": "Host open the campyuk website",
+            "name": "User reserve a campsite",
             "match": {
-              "location": "LoginHostSteps.verifyDisplay()"
+              "location": "CampSiteUserSteps.CheckReserve()"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6453340900,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Host input \"punyagua\" as userName and input \"apelu\" as password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "punyagua",
-                  "offset": 12
-                },
-                {
-                  "val": "apelu",
-                  "offset": 45
-                }
-              ],
-              "location": "LoginHostSteps.inputCredential(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5146959600,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Host see error \"password not matched\" on login page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "password not matched",
-                  "offset": 16
-                }
-              ],
-              "location": "LoginHostSteps.errorText(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@LoginHost"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 5354865200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Invalid Login Host",
-        "description": "",
-        "id": "as-host-i-want-to-log-in;invalid-login-host;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 760824700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 204888600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Host open the campyuk website",
-            "match": {
-              "location": "LoginHostSteps.verifyDisplay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6329464800,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Host input \"apesiii\" as userName and input \"mencoba12\" as password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "apesiii",
-                  "offset": 12
-                },
-                {
-                  "val": "mencoba12",
-                  "offset": 44
-                }
-              ],
-              "location": "LoginHostSteps.inputCredential(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5197315600,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Host see error \"account not registered or server error\" on login page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "account not registered or server error",
-                  "offset": 16
-                }
-              ],
-              "location": "LoginHostSteps.errorText(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@LoginHost"
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "as host i want to log in",
+    "name": "Testing item list as user",
     "description": "",
-    "id": "as-host-i-want-to-log-in",
+    "id": "testing-item-list-as-user",
     "keyword": "Feature",
-    "uri": "features/LoginHost.feature",
+    "uri": "features/CampSiteUser.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@LoginHost"
+        "name": "@CampSite"
       }
     ]
   }
