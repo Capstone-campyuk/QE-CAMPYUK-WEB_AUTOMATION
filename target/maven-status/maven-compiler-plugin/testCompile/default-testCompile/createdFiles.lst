@@ -1,8 +1,0 @@
-step_definitions/LandingPageSteps.class
-step_definitions/RegisterHostSteps.class
-step_definitions/Hooks.class
-step_definitions/LoginHostSteps.class
-step_definitions/RegisterUserSteps.class
-step_definitions/RunCukesTest.class
-step_definitions/LogInUserSteps.class
-step_definitions/LoginAdminSteps.class
