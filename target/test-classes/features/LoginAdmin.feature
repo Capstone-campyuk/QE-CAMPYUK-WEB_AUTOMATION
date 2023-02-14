@@ -1,4 +1,4 @@
-@LoginAdmin
+@Login
 Feature: as admin i want to log in
 
   Scenario: Host login with valid "username" and "password"
@@ -10,7 +10,7 @@ Feature: as admin i want to log in
   Scenario Outline: Invalid Login Admin
     Given Admin open the campyuk website
     When Admin input "<userName>" as userName and input "<password>" as password
-    And Admin see error "<errorMessage>" on login page
+    Then Admin see error "<errorMessage>" on login page
     Examples:
       | userName | password   | errorMessage                           |
       | admin    | 3283782748 | password not matched                   |

@@ -35,7 +35,7 @@ public class LoginAdminSteps {
     public void verifyDisplay1(){
         LogInPage loginPage = new LogInPage(webDriver);
         loginPage.getHeaderAdmin();
-        loginPage.clickOkAdmin();
+
     }
     @Then("Admin see error \"(.*)\" on login page")
     public void errorText(String errorText) throws InterruptedException {

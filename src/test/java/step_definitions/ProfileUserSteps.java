@@ -37,7 +37,7 @@ public class ProfileUserSteps {
         userPage.UpdateEmail(email);
         userPage.UpdatePhoto(photo);
         userPage.buttonSave();
-        Thread.sleep(6000);
+        Thread.sleep(5000);
 
     }
     @And("User remove profile")

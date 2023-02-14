@@ -7,6 +7,6 @@ Feature:Testing item list as user
     Then User should directed into next page
     And User click explore button
     And User Should see the items list
-    And User choose babi panggang karo camp site
+    And User choose items
     And User reserve a campsite
 

@@ -1,4 +1,4 @@
-@LoginHost
+@Login
 Feature: as host i want to log in
 
   Scenario: Host login with valid "username" and "password"
@@ -7,7 +7,7 @@ Feature: as host i want to log in
     Then Host should directed into next page
 
 
-  Scenario Outline: Invalid Login Host
+  Scenario Outline:Invalid Login Host
     Given Host open the campyuk website
     When Host input "<userName>" as userName and input "<password>" as password
     Then Host see error "<errorMessage>" on login page

@@ -49,9 +49,8 @@ public class LogInUserSteps {
     public void errorText(String errorText) throws InterruptedException {
         LogInPage loginpage = new LogInPage(webDriver);
         Assert.assertEquals(errorText, loginpage.getErrorText());
-        Thread.sleep(6000);
+        Thread.sleep(3000);
         loginpage.clickOkErrorMessage();
-
     }
 
 

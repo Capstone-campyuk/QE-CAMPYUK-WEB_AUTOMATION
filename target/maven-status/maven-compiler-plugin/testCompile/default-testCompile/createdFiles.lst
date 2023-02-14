@@ -1,5 +1,6 @@
 step_definitions\Hooks.class
 step_definitions\MyBookingSteps.class
+step_definitions\OrderSteps.class
 step_definitions\RunCukesTest.class
 step_definitions\LogInUserSteps.class
 step_definitions\LoginAdminSteps.class

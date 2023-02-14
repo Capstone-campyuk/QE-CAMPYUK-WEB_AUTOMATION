@@ -12,42 +12,48 @@ public class OrderSteps {
         super();
         this.webDriver = Hooks.webDriver;
     }
-    @And("User input checkin date")
-    public void CheckInField(){
+    @And("User input checkin date \"(.*)\"")
+    public void CheckInField(String checkIN){
         UserPage userPage = new UserPage(webDriver);
-        userPage.selectDate("13");
+        userPage.setChekIn(checkIN);
 
     }
-    @And("User input checkout date")
-    public void CheckOutField(){
+    @And("User input checkout date \"(.*)\"")
+    public void CheckOutField(String checkOut){
         UserPage userPage = new UserPage(webDriver);
+        userPage.selectCheckoutDate(checkOut);
 
-        userPage.selectCheckoutDate("14");
     }
 
     @And("User input number of guest \"(.*)\"")
-    public void NumberOfGuest(String gues){
+    public void NumberOfGuest(String gues)throws InterruptedException{
         UserPage userPage = new UserPage(webDriver);
         userPage.setGuest(gues);
+        Thread.sleep(3000);
     }
     @And("User input quantity items \"(.*)\"")
-    public void InputQuantityItems(String number1){
+    public void InputQuantityItems(String number1)throws InterruptedException{
         UserPage userPage = new UserPage(webDriver);
         userPage.ClickItems1();
         userPage.setQuantity1(number1);
+        Thread.sleep(3000);
         userPage.getPriceDetails();
     }
     @And("User choose payment method")
-    public void InputQuantityItems(){
+    public void InputQuantityItems()throws InterruptedException{
         UserPage userPage = new UserPage(webDriver);
         userPage.setPaymentMethod();
         userPage.setPaymentBca();
+        Thread.sleep(3000);
+
     }
     @And("User book campsite")
-    public void BookCampSite(){
+    public void BookCampSite()throws InterruptedException{
         UserPage userPage = new UserPage(webDriver);
         userPage.setPaymentMethod();
         userPage.clickBtnBookNow();
+        Thread.sleep(3000);
+
     }
     @And("User can not click button")
     public void BookCampSiteDisable(){

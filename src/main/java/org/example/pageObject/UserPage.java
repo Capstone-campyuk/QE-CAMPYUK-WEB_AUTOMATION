@@ -1,17 +1,20 @@
 package org.example.pageObject;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class UserPage {
-    public static WebDriver driver;
+    public static WebDriver     driver;
 
     public UserPage(WebDriver driver){
         PageFactory.initElements(driver, this);
         this.driver = driver ;
     }
+
     @FindBy(id = "btn-camplist")
     private WebElement exploreButton;
     public void clickExplore(){
@@ -32,18 +35,28 @@ public class UserPage {
 
     @FindBy(css = "[d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 12l-4-4h8l-4 4z']")
     private WebElement loadButton;
-    public void clickload(){
-        loadButton.click();
+    public void clickload(Integer looping) {
+        for (int i = 0; i <= looping; i++) {
+            loadButton.click();
+        }
     }
-    @FindBy(xpath = "//a[@href='/camp/108']/button[@id='btn-detail']")
+    @FindBy(xpath = "(//*[@id='btn-detail'])[1]")
     private WebElement checkButton;
-    public void clickCheck(){
+
+//    public void CheckCampsiteButton(){
+//        checkButton.click();
+//    }
+    public void CheckCampsiteButton() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", checkButton);
         checkButton.click();
     }
-    @FindBy(xpath = "//h1[.='Pondok Genggong']")
+
+    @FindBy(css = "div:nth-of-type(13) div:nth-of-type(1) > h1")
     private WebElement campSiteDetail;
-    public boolean getCampsiteDetail(){
-        return campSiteDetail.isDisplayed();
+    public void scrollToElement() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", campSiteDetail);
+
     }
 
     @FindBy(xpath = "//h1[@class='flex text-2xl lg:w-1/3']")
@@ -160,22 +173,100 @@ public class UserPage {
     public boolean getMyBookingHeader(){
         return bookingHeader.isDisplayed();
     }
-    @FindBy(xpath = "//a[contains(.,'babi panggang karo HorasDates2023-02-12 - 2023-02-13E-TicketINV-68-20230210-1756')]")
+    @FindBy(id = "detail-history")
     private WebElement clickDetailBooking;
     public void buttonDetailBooking(){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clickDetailBooking);
         clickDetailBooking.click();
     }
 
     @FindBy(id = "orderhost-page")
     private WebElement bookingHeaderDetail;
     public boolean getMyBookingHeaderDetail(){
-        return bookingHeader.isDisplayed();
+        return bookingHeaderDetail.isDisplayed();
     }
-    @FindBy(id = "btn-cancel")
+    @FindBy(xpath = "//button[@id='btn-cancel']")
     private WebElement clickCancelBooking;
     public void buttonCancelBooking(){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clickCancelBooking);
         clickCancelBooking.click();
     }
+    //order page element
+    @FindBy(id = "Check-In")
+    private WebElement clickCheckIn;
+    public void setChekIn(String number){
+        clickCheckIn.sendKeys(number);
+    }
+    @FindBy(id = "Check-Out")
+    private WebElement clickCheckOut;
+    public void selectCheckoutDate(String date) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clickCheckOut);
+        clickCheckOut.sendKeys(date);
+    }
+
+    @FindBy(id = "Guest")
+    private WebElement guest;
+    public void setGuest(String number){
+        guest.sendKeys(number);
+        }
+
+    @FindBy(xpath = "//div[@class='flex flex-col gap-2']/div[1]/input[@class='w-[13%]']")
+    private WebElement clickItems1;
+    public void ClickItems1(){
+        clickItems1.click();
+    }
+    @FindBy(xpath = "//div[@class='flex flex-col gap-2']/div[1]/input[@id='number']")
+    private WebElement Quantity1;
+    public void setQuantity1(String quantity1){
+        Quantity1.sendKeys(quantity1);
+    }
+    @FindBy(xpath = "//div[@class='flex flex-col gap-2']/div[2]/input[@class='w-[13%]']")
+    private WebElement clickItems2;
+    public void ClickItems2(){
+        clickItems2.click();
+    }
+
+    @FindBy(xpath = "//h1[.='Price Details']")
+    private WebElement priceDetails;
+    public boolean getPriceDetails(){
+        return priceDetails.isDisplayed();
+    }
+
+    @FindBy(xpath = "//h1[.='Payment Method']")
+    private WebElement paymentMethod;
+    public void setPaymentMethod(){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", paymentMethod);
+        paymentMethod.isDisplayed();
+    }
+
+    @FindBy(id = "bca")
+    private WebElement bcaPayment;
+    public void setPaymentBca(){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", bcaPayment);
+        bcaPayment.click();
+    }
+
+    @FindBy(id = "btn-booknow")
+    private WebElement btnBookNow;
+    public void clickBtnBookNow(){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", btnBookNow);
+        btnBookNow.click();
+    }
+
+    @FindBy(id = "btn-booknow")
+    private WebElement btnBookNowEnabled;
+    public boolean clickBtnBookNowEnabled(){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", btnBookNowEnabled);
+       return btnBookNowEnabled.isEnabled();
+    }
+
+
+
+
+
+
+
+
 
 
 

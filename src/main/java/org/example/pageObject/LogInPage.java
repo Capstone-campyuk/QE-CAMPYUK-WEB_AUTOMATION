@@ -13,7 +13,7 @@ public class LogInPage {
         PageFactory.initElements(driver, this);
         this.driver = driver ;
     }
-    @FindBy(xpath = "//h1[@class='font-extrabold antialiased text-2xl']")
+    @FindBy(xpath ="//h1[@class='font-extrabold antialiased text-2xl']")
     private WebElement header;
     public boolean getHeader(){
         return header.isDisplayed();
@@ -54,14 +54,14 @@ public class LogInPage {
         loginOk.click();
     }
 
-    @FindBy(xpath = " //div[@class='swal2-html-container']  ")
+    @FindBy(id = "swal2-html-container")
     private WebElement errorMessage;
 
     public String getErrorText(){
         return errorMessage.getText();
     }
 
-    @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled']")
+    @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled swal2-default-outline']")
     private WebElement btnErrorMessage;
 
     public void clickOkErrorMessage(){
@@ -70,7 +70,7 @@ public class LogInPage {
 
     // host
 
-    @FindBy(xpath = "//div[@class='swal2-popup swal2-modal swal2-show']")
+    @FindBy(id = "host-page")
     private WebElement headerHost;
     public boolean getHeaderHost(){
         return headerHost.isDisplayed();
@@ -84,7 +84,7 @@ public class LogInPage {
 
     // Admin
 
-    @FindBy(xpath = "//div[@class='swal2-popup swal2-modal swal2-show']")
+    @FindBy(id = "admin-page")
     private WebElement headerAdmin;
     public boolean getHeaderAdmin(){
         return headerAdmin.isDisplayed();

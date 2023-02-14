@@ -51,7 +51,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                7,
+                27,
                 0,
                 0,
                 0,
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 7) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 27) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,7 +107,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
+                9,
                 0
             ],
             backgroundColor: [
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -157,7 +157,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
+                   3,
                    0
                ],
                backgroundColor: [
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>11 Feb 2023, 22:39</td>
+                        <td>14 Feb 2023, 16:05</td>
           </tr>
         </tbody>
       </table>
@@ -323,35 +323,65 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="features-CampSiteUser-feature.html">Testing item list as user</a></td>
+        <td class="tagname"><a href="features-LoginAdmin-feature.html">as admin i want to log in</a></td>
         
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >3</td>
         <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
+        <td class="total">3</td>
+        <td      class="passed"    >9</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">7</td>
-        <td class="duration" data-value="41364453600">41s 364ms</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="26175562203">26s 175ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="features-LoginHost-feature.html">as host i want to log in</a></td>
+        
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+        <td      class="passed"    >9</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="26285983100">26s 285ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="features-LogInUser-feature.html">as user i want login into campyuk website</a></td>
+        
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+        <td      class="passed"    >9</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="26887066004">26s 887ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>1</td>
-            <td>1</td>
+      <td>3</td>
+            <td>9</td>
       <td>0</td>
-      <td>1</td>
-      <td>7</td>
-      <td>0</td>
-      <td>0</td>
+      <td>9</td>
+      <td>27</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
-      <td class="duration">41s 364ms</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27</td>
+      <td class="duration">1m 19s 348ms</td>
       <td></td>
     </tr>
     <tr>
