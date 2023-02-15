@@ -14,7 +14,7 @@ public class Hooks {
         System.setProperty("webdriver.chrome.driver",
                 System.getProperty("user.dir") + "\\driver\\chromedriver.exe");
 
-        System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, "driver/chromedriver");
+//        System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, "driver/chromedriver");
 
         webDriver = new ChromeDriver();
         String appUrl= "https://campyuk.vercel.app/";
