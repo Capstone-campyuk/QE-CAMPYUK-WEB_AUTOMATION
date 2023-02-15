@@ -8,7 +8,7 @@ Feature:Testing order
     Then User should directed into next page
     And User click explore button
     And User Should see the items list
-    And User choose ngarai sianok
+    And User choose items
     And User reserve a campsite
     And User input checkin date "14/02/2023"
     And User input number of guest "1"

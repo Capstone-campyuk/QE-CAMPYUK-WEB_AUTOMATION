@@ -32,9 +32,10 @@ public class LoginAdminSteps {
     }
 
     @Then("Admin should directed into next page")
-    public void verifyDisplay1(){
+    public void verifyDisplay1()throws InterruptedException{
         LogInPage loginPage = new LogInPage(webDriver);
         loginPage.getHeaderAdmin();
+        Thread.sleep(3000);
 
     }
     @Then("Admin see error \"(.*)\" on login page")

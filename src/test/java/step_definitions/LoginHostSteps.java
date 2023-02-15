@@ -33,9 +33,10 @@ public class LoginHostSteps {
     }
 
     @Then("Host should directed into next page")
-    public void verifyDisplayHost(){
+    public void verifyDisplayHost()throws InterruptedException{
         LogInPage loginPage = new LogInPage(webDriver);
         loginPage.getHeaderHost();
+        Thread.sleep(6000);
 
     }
     @Then("Host see error \"(.*)\" on login page")

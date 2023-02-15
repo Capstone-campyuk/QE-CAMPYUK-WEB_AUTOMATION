@@ -1,7 +1,7 @@
-Feature: Register User
-  User make registration on Campyuk Website
+@RegisterUser
+Feature: Register User make registration on Campyuk Website
 
-  @Step @PositiveTestCase
+  @PositiveTestCase
   Scenario: guest input all field to registration
     Given guest already at campyuk website and has not registered yet
     And guest click login button on landing page

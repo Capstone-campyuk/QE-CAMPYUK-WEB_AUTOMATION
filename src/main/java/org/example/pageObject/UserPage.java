@@ -246,7 +246,7 @@ public class UserPage {
         bcaPayment.click();
     }
 
-    @FindBy(id = "btn-booknow")
+    @FindBy(xpath = "//button[@id='btn-booknow']")
     private WebElement btnBookNow;
     public void clickBtnBookNow(){
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", btnBookNow);
