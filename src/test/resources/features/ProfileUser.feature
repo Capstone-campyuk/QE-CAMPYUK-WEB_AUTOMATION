@@ -22,7 +22,7 @@ Feature:Testing Update feature
 
   Scenario:remove profile
     Given User open the campyuk website
-    When User input "diqy07" as userName and input "12345678" as password
+    When User input "diqy08" as userName and input "12345678" as password
     Then User should directed into next page
     And User click explore button
     And User Should see the items list

@@ -9,7 +9,7 @@ Feature:Testing item list as user
     And User Should see the items list
     And User want to see history for their own booking
     And User see all their bookings
-    And User click babi panggang karo order
+    And User click an items
     Then User should see detail order
 
   Scenario:user click on my history and cancel booking
@@ -20,6 +20,6 @@ Feature:Testing item list as user
     And User Should see the items list
     And User want to see history for their own booking
     And User see all their bookings
-    And User click babi panggang karo order
+    And User click an items
     Then User should see detail order
     And User click cancel on babi panggang karo order

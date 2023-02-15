@@ -36,16 +36,16 @@ public class LoginHostSteps {
     public void verifyDisplayHost(){
         LogInPage loginPage = new LogInPage(webDriver);
         loginPage.getHeaderHost();
-        loginPage.clickOkHost();
+
     }
     @Then("Host see error \"(.*)\" on login page")
     public void errorText(String errorText) throws InterruptedException {
         LogInPage loginpage = new LogInPage(webDriver);
         Assert.assertEquals(errorText, loginpage.getErrorText());
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         loginpage.clickOkErrorMessage();
-
     }
+
 
 
 
